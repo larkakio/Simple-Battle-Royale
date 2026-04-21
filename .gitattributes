@@ -1,0 +1,6 @@
+# GitHub Linguist: the Next.js app has far more lines than Foundry contracts, so
+# the repo was labeled 100% TypeScript. Mark web/ as vendored so language stats
+# reflect the on-chain part (Solidity). All app code remains in the repo as usual.
+web/** linguist-vendored
+
+contracts/lib/** linguist-vendored
