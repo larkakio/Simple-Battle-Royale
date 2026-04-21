@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #050510;
+  --foreground: #e4e4e7;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-orbitron), system-ui, sans-serif;
+}
+
+.glitch-title [data-text]::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  color: rgba(255, 0, 170, 0.5);
+  clip-path: inset(0 0 55% 0);
+  animation: glitch 3s ease-in-out infinite;
+}
+
+@keyframes glitch {
+  0%,
+  90%,
+  100% {
+    transform: translate(0);
+    opacity: 0.6;
+  }
+  92% {
+    transform: translate(-2px, 1px);
+  }
+  94% {
+    transform: translate(2px, -1px);
+  }
+  96% {
+    transform: translate(-1px, -1px);
+  }
+}
