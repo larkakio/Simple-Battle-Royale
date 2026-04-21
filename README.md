@@ -2,6 +2,11 @@
 
 Mobile-first cyberpunk mini battle royale on **Base**, with swipe controls, shrinking safe zone, daily **check-in** contract, and **Builder Code** (ERC-8021) attribution on transactions.
 
+## Production
+
+- **URL:** https://simple-battle-royale.vercel.app  
+- Set the same URL in Vercel env as `NEXT_PUBLIC_SITE_URL` and register it on [Base dashboard](https://dashboard.base.org) for domain verification (`base:app_id` meta matches `NEXT_PUBLIC_BASE_APP_ID`).
+
 ## Repo layout
 
 - **`web/`** — Next.js App Router (deploy with **Vercel Root Directory = `web`**).

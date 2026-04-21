@@ -1,7 +1,7 @@
 export function getBaseAppId(): string {
   return (
     process.env.NEXT_PUBLIC_BASE_APP_ID?.trim() ||
-    "base-app-id-placeholder"
+    "69e7242434580a2b8e8c6263"
   );
 }
 
@@ -10,7 +10,7 @@ export function getSiteUrl(): string {
     process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ||
     (typeof window !== "undefined"
       ? window.location.origin
-      : "http://localhost:3000")
+      : "https://simple-battle-royale.vercel.app")
   );
 }
 

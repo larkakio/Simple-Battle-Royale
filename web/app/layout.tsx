@@ -26,7 +26,8 @@ export const metadata: Metadata = {
   description:
     "Survive the shrinking neon zone. Swipe to move. Daily check-in on Base.",
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
+    process.env.NEXT_PUBLIC_SITE_URL ||
+      "https://simple-battle-royale.vercel.app",
   ),
   openGraph: {
     title: "Simple Battle Royale",
